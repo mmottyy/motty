@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "motty"
+version = "0.1.0"
+description = "Chatbot-style connector for SharePoint, JIRA, NAS, Confluence, and MCP servers"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "motty" }]
+dependencies = ["requests>=2.31.0"]
+
+[project.scripts]
+motty = "motty.cli:main"
